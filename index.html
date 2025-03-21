@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item" onclick="openLightbox('images/image1.jpg')">
+            <img src="images/image1.jpg" alt="Image 1">
+            <div class="caption">Chocolate Chip Cookies</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="images/image2.jpg" alt="Image 2">
+            <div class="caption">Cheeseburger</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/image3.jpg')">
+            <img src="images/image3.jpg" alt="Image 3">
+            <div class="caption">Pizza Dough Balls</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/image4.jpg')">
+            <img src="images/image4.jpg" alt="Image 4">
+            <div class="caption">Crab Rangoon Pizza</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/image5.jpg')">
+            <img src="images/image5.jpg" alt="Image 5">
+            <div class="caption">Breakfast Lasagna</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/image6.jpg')">
+            <img src="images/image6.jpg" alt="Image 6">
+            <div class="caption">Pasta with Asparagas & Bacon Cream Sauce</div>
+        </div>
+    
+        <div class="gallery-item" onclick="openLightbox('images/image8.jpg')">
+            <img src="images/image8.jpg" alt="Image 8">
+            <div class="caption">Potato Gnocchi with Bacon-Bechamel Sauce</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/image9.jpg')">
+            <img src="images/image9.jpg" alt="Image 9">
+            <div class="caption">Brisket Fried Rice with Asparagus & Spicy Slaw</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/image10.jpg')">
+            <img src="images/image10.jpg" alt="Image 10">
+            <div class="caption">5 Spice Rubbed Pork Belly</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/image11.jpg')">
+            <img src="images/image11.jpg" alt="Image 11">
+            <div class="caption">Rosemary & Thyme Focaccia</div>
+        </div>
+        
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="Enlarged">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
